@@ -45,7 +45,6 @@ Here’s an example to help illustrate:
 #include <stdio.h>
 #include <setjmp.h>
 
-
 jmp_buf env;
 int main(int argc, char **argv)
 {
