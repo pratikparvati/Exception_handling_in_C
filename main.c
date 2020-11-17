@@ -1,3 +1,10 @@
+/**
+ * @file main.c
+ * @brief Demonstrate the working of macros
+ * @author Pratik Parvati (pratikparvati@gmail.com)
+ * @version 1.0
+ */
+
 #include <stdio.h>
 #include "cexception.h"
 
@@ -15,4 +22,5 @@ int main()
         printf("Caught exception!\r\n");
     }
     END_TRY;
+    return 0;
 }
