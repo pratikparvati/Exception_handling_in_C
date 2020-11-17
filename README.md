@@ -87,7 +87,10 @@ C does not have native exception support; but you can make your own with some cl
 
 To compile and run 
 ```
-$ gcc main.c -o main
+$ mkdir build
+$ cd build
+$ cmake ..
+$ make main
 $ ./main
 ```
 
@@ -102,7 +105,13 @@ $ ./main
 
 To compile and run 
 ```
-$ gcc test.c -o test
-$ ./test
+$ mkdir build
+$ cd build
+$ cmake ..
+$ make etest
+$ ./etest
 ```
+Use command `make all` or simply `make` to build both `main` and `etest`
+
+You can include `cexception.h` in your source file and use these macros as demonstrated in `test.c` .
 
